@@ -18,4 +18,4 @@ Um portfólio pessoal criado para mostrar meus projetos e habilidades em desenvo
 - **Seção de Contato**: links para redes sociais.
 
 ## Deploy
-Visualize a versão online do portfólio através deste [link](https://github.com/GabrielTh58/Portfolio).
+Visualize a versão online do portfólio através deste [link](https://gabrielth58.github.io/Portfolio/).
