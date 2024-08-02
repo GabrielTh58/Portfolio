@@ -1,53 +1,21 @@
-# Meu Portfólio Front-End
+# Meu Portfólio
 
-Bem-vindo ao meu portfólio front-end! Aqui você encontrará uma coleção dos meus projetos e trabalhos recentes. Este portfólio é uma representação do meu progresso e habilidades como desenvolvedor front-end. Fique à vontade para explorar e entrar em contato se tiver alguma dúvida ou proposta.
+## Descrição
 
-## Índice
-
-- [Sobre Mim](#sobre-mim)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Projetos](#projetos)
-- [Contato](#contato)
-- [Deploy](#deploy)
-
-## Sobre Mim
-
-Olá! Meu nome é Gabriel e sou um desenvolvedor front-end apaixonado por criar interfaces bonitas e funcionais. Tenho experiência em HTML, CSS, JavaScript e várias bibliotecas e frameworks populares. Sempre busco aprender novas tecnologias e melhorar minhas habilidades.
+Um portfólio pessoal criado para mostrar meus projetos e habilidades em desenvolvimento web. O site foi construído com HTML e CSS, utilizando boas práticas de desenvolvimento e clean code.
 
 ## Tecnologias Utilizadas
 
-Este portfólio foi construído utilizando as seguintes tecnologias:
+- **HTML**: Estrutura básica e conteúdo do site.
+- **CSS**: Estilo e layout, utilizando Flexbox e Grid para design responsivo e layout eficiente.
 
-- HTML5
-- CSS3 (flexbox e grid)
 
-## Projetos
+## Funcionalidades
 
-Aqui estão alguns dos projetos destacados neste portfólio:
-
-1. **Projeto 1**
-   - Descrição: Breve descrição do projeto.
-   - Tecnologias: HTML, CSS, JavaScript.
-
-2. **Projeto 2**
-   - Descrição: Breve descrição do projeto.
-   - Tecnologias: HTML, CSS, React.
-
-3. **Projeto 3**
-   - Descrição: Breve descrição do projeto.
-   - Tecnologias: HTML, CSS, Bootstrap.
-
-## Contato
-
-Você pode me contatar através das seguintes plataformas:
-
-- Email: gabriel.956622@outlook.com
-- LinkedIn: [Seu Perfil](https://www.linkedin.com/in/gabrielcorreia-dev/)
-
-Estou disponível para colaborações e novos projetos! Não hesite em entrar em contato para discutir como podemos trabalhar juntos.
-
+- **Página Inicial**: Apresenta uma visão geral dos meus projetos e habilidades.
+- **Seção de Projetos**: Detalhes sobre cada projeto com links e descrições.
+- **Seção de Sobre**: Informações pessoais e trajetória profissional.
+- **Seção de Contato**: links para redes sociais.
 
 ## Deploy
-
-Confira meu portfólio em produção:
-[Link para o meu portfólio](https://gabrielth58.github.io/Portfolio/)
+Visualize a versão online do portfólio através deste [link](https://gabrielth58.github.io/Portfolio/).
