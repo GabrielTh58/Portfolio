@@ -117,7 +117,7 @@ export function Projects() {
                         <a href={currentProject.link} target="_blank" rel="noopener noreferrer">
                             <h3>{currentProject.title}</h3>
                             <img src={currentProject.img} alt={currentProject.alt} />
-                            <ProjectDetails $isMobile={isMobile}>
+                            <ProjectDetails isMobile={isMobile}>
                                 <p>{currentProject.description}</p>
                             </ProjectDetails>
                         </a>

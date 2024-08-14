@@ -13,7 +13,7 @@ export const ArrowButton = (props: ArrowButtonProps) => {
     return (
         <ArrowBtn
             onClick={previousProject ?? onClick}
-            $isDisabled={isDisabled}
+            isDisabled={isDisabled}
             disabled={isDisabled}
         >
             {children}

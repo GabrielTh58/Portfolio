@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const ArrowBtn = styled.button`
+interface ArrowBtnProps {
+    isDisabled?: boolean;
+}
+
+export const ArrowBtn = styled.button<ArrowBtnProps>`
     background-color: var(--dark-background-color);
     color: var(--primary-color);
     border: none;
@@ -17,8 +21,8 @@ export const ArrowBtn = styled.button`
     
     svg {   
         font-size: var(--extra-large-font-size);
-        cursor: ${props => props.$isDisabled ? 'not-allowed' : 'pointer'};
-        opacity: ${props => props.$isDisabled ? '0.3' : '1'};
+        cursor: ${props => props.isDisabled ? 'not-allowed' : 'pointer'};
+        opacity: ${props => props.isDisabled ? '0.3' : '1'};
 
         @media(max-width: 500px) {
             margin: 0;

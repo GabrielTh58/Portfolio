@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import { IconBase, DefaultShadowEffect} from "../../styles/GlobalStyles";
 
+interface ProjectDetailsProps {
+    isMobile: boolean;
+}
+
 export const ProjectsWrapper = styled.section`
     width: 100vw;
 `
@@ -16,7 +20,7 @@ export const ProjectsContainer = styled.div`
     }
 `
 
-export const ProjectDetails = styled.div`
+export const ProjectDetails = styled.div<ProjectDetailsProps>`
     padding: 20px 20px;    
     background-color: var(--dark-background-color);
     position: absolute;
@@ -35,7 +39,7 @@ export const ProjectDetails = styled.div`
     }
 
     p{
-        display: ${props => props.$isMobile ? 'none' : 'block'};
+      display: ${(props) => (props.isMobile ? "none" : "block")};
     }
 
 `

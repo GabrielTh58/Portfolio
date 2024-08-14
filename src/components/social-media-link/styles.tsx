@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { OuterShadow } from "../../styles/GlobalStyles";
 
-export const SocialLinksContainer = styled.div`
+export const SocialLinksContainer = styled.div<{ justify?: string }>`
   display: flex;
-  justify-content: ${(props) => props.$justify};
+  justify-content: ${(props) => props.justify || 'flex-start'};
 
   @media(max-width: 1280px) { 
     justify-content: center;
   }
 
-  a{
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,4 +27,4 @@ export const SocialLinksContainer = styled.div`
       color: var(--primary-color);
     }
   }
-`
+`;
