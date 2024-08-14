@@ -22,6 +22,7 @@ Este portfólio centraliza minhas habilidades, experiências e evolução como d
 - **React**
 - **Styled Components**:
 - **TypeScript**
+- **AOS Animate**
 
 ### Links
 
@@ -29,6 +30,6 @@ Este portfólio centraliza minhas habilidades, experiências e evolução como d
 
 ## Autor
 
-- **LinkedIn**: [Gabriel Correia](https://www.linkedin.com/in/gabrielcorreia-dev)
-- **WhatsApp**: [+55 (41) 9 9956-7727](tel:+5541999567727)
+- **LinkedIn**: [@GabrielCorreia](https://www.linkedin.com/in/gabrielcorreia-dev)
+- **WhatsApp**: [+55 (41) 9 99566-7727](tel:+5541999567727)
 - **E-mail**: [gabrie.lcorreia@hotmail.com](mailto:gabrie.lcorreia@hotmail.com)
