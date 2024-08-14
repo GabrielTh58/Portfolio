@@ -26,7 +26,7 @@ Este portfólio centraliza minhas habilidades, experiências e evolução como d
 
 ### Links
 
-- **Portfólio Online**: [Visualizar Portfólio](https://gabrielth58.github.io/Portfolio/)
+- **Portfólio Online**: [Visualizar Portfólio](https://gabriel-correia-portfolio.vercel.app)
 
 ## Autor
 
