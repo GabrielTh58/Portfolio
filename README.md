@@ -6,7 +6,7 @@
 
 Este portfólio centraliza minhas habilidades, experiências e evolução como desenvolvedor, destacando o uso de novas tecnologias e boas práticas. Será atualizado frequentemente, mantendo um registro contínuo do meu crescimento profissional e da incorporação de novas competências.
 
-### Capturas de Tela
+### Solução
 
 ![Web](./src/assets/Gif-Portfolio.gif)
 ![Mobile](./src/assets/Gif-Portfolio-Mobile.gif)
