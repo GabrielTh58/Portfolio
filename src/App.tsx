@@ -7,7 +7,7 @@ import { Home } from './components/home'
 import { About } from './components/about'
 import { Skills } from './components/skills'
 import { Footer } from './components/footer'
-import { Projects } from './components/projects'
+import { Projects } from './components/projetos'
 function App() {
 
   useEffect(() => {

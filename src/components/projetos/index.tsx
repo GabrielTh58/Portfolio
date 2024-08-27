@@ -13,7 +13,7 @@ interface ProjectItem {
 const projects: ProjectItem[] = [
     {
         title: "Space Tourism | Website",
-        img: "../../assets/Space-Tourism.png",
+        img: "./src/assets/Space-Tourism.png",
         alt: "Space tourism Landing Page",
         description: (
             <>
@@ -26,7 +26,7 @@ const projects: ProjectItem[] = [
     },
     {
         title: "IP Address Tracker | Utilizando ipify e leafletjs",
-        img: "../../assets/Ip_adress_tracker.png",
+        img: "./src/assets/Ip_adress_tracker.png",
         alt: "Ip Adress Tracker",
         description: (
             <>
@@ -39,7 +39,7 @@ const projects: ProjectItem[] = [
     },
     {
         title: "Profile Search | Github API",
-        img: "../../assets/Profile-Search-Github-API.png",
+        img: "./src/assets/Profile-Search-Github-API.png",
         alt: "Profile Search Github API",
         description: (
             <>
@@ -53,7 +53,7 @@ const projects: ProjectItem[] = [
     },
     {
         title: "Gabriel Correia | Portfólio",
-        img: "../../assets/Portfolio.png",
+        img: "./src/assets/Portfolio.png",
         alt: "Grid Landing Page",
         description: (
             <>
