@@ -62,7 +62,7 @@ const projects: ProjectItem[] = [
         alt: "Portfolio",
         description: (
             <>
-                Desenvolvido com TypeScript, React e Styled Components, este portfólio demonstra minhas habilidades em front-end
+                Desenvolvido com TypeScript, React e Styled Components, este portfólio demonstra minhas habilidades em front-end.
                 <br /><br />
                 Utilizei boas práticas, mantendo o código limpo e organizado, e focando na reutilização de elementos para criar um design responsivo e uma estrutura clara, destacando meus projetos.
                 Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor. <br /> <br /> 🔗 Ver no Vercel
