@@ -1,19 +1,24 @@
-import { useEffect, useState } from "react";
-import { ProjectsWrapper, ProjectsContainer, ProjectDetails, ProjectCard, ArrowRightIcon, ArrowLeftIcon } from "./styles";
-import { Container, Row, SectionHeading } from "../../styles/GlobalStyles";
-import { ArrowButton } from "../arrowButton";
+import { useEffect, useState } from "react"
+import { ProjectsWrapper, ProjectsContainer, ProjectDetails, ProjectCard, ArrowRightIcon, ArrowLeftIcon } from "./styles"
+import { Container, Row, SectionHeading } from "../../styles/GlobalStyles"
+import { ArrowButton } from "../arrowButton"
+import SpaceTourismImage from "../../assets/Space-Tourism.png"
+import IpAdressTrackerImage from "../../assets/Ip_adress_tracker.png"
+import PortfolioImage from "../../assets/Portfolio.png"
+import ProfileSearchImage from "../../assets/Profile-Search-Github-API.png"
+
 interface ProjectItem {
-    title: string;
-    img: string;
-    alt: string;
-    description: JSX.Element;
-    link: string;
+    title: string
+    img: string
+    alt: string
+    description: JSX.Element
+    link: string
 }
 
 const projects: ProjectItem[] = [
     {
         title: "Space Tourism | Website",
-        img: "./src/assets/Space-Tourism.png",
+        img: SpaceTourismImage,
         alt: "Space tourism Landing Page",
         description: (
             <>
@@ -26,7 +31,7 @@ const projects: ProjectItem[] = [
     },
     {
         title: "IP Address Tracker | Utilizando ipify e leafletjs",
-        img: "./src/assets/Ip_adress_tracker.png",
+        img: IpAdressTrackerImage,
         alt: "Ip Adress Tracker",
         description: (
             <>
@@ -39,7 +44,7 @@ const projects: ProjectItem[] = [
     },
     {
         title: "Profile Search | Github API",
-        img: "./src/assets/Profile-Search-Github-API.png",
+        img: ProfileSearchImage,
         alt: "Profile Search Github API",
         description: (
             <>
@@ -53,11 +58,11 @@ const projects: ProjectItem[] = [
     },
     {
         title: "Gabriel Correia | Portfólio",
-        img: "./src/assets/Portfolio.png",
-        alt: "Grid Landing Page",
+        img: PortfolioImage,
+        alt: "Portfolio",
         description: (
             <>
-                Construído com HTML e CSS puro, demonstra minhas habilidades em desenvolvimento front-end.
+                Desenvolvido com TypeScript, React e Styled Components, este portfólio demonstra minhas habilidades em front-end
                 <br /><br />
                 Utilizei boas práticas, mantendo o código limpo e organizado, e focando na reutilização de elementos para criar um design responsivo e uma estrutura clara, destacando meus projetos.
                 Continuarei atualizando-o com novos projetos cada vez mais complexos e que agreguem valor à minha carreira como Desenvolvedor. <br /> <br /> 🔗 Ver no Vercel
