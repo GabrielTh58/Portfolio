@@ -6,7 +6,7 @@ import SpaceTourismImage from "../../assets/Space-Tourism.png"
 import IpAdressTrackerImage from "../../assets/Ip_adress_tracker.png"
 import PortfolioImage from "../../assets/Portfolio.png"
 import ProfileSearchImage from "../../assets/Profile-Search-Github-API.png"
-
+import PokedexImage from "../../assets/Pokedex.png"
 interface ProjectItem {
     title: string
     img: string
@@ -43,15 +43,30 @@ const projects: ProjectItem[] = [
         link: "https://gabrielth58.github.io/IP-Address-Tracker/",
     },
     {
+        title: "Pokedex | React",
+        img: PokedexImage,
+        alt: "Pokedex",
+        description: (
+            <>
+                Desenvolvido utilizando React, Styled Components, Context API, React Router e PokeAPI.
+                <br /><br />
+                É uma aplicação de Pokedex com funcionalidades como listagem de pokemons, carregamento dinâmico de mais pokemons, visualização detalhada 
+                de cada pokemon e alternância de tema entre claro e escuro.<br /><br />🔗 Ver no Vercel
+            </>
+        ),
+        link: "https://gco-quest-pokedex.vercel.app",        
+    },
+    {
         title: "Profile Search | Github API",
         img: ProfileSearchImage,
         alt: "Profile Search Github API",
         description: (
             <>
-                Este projeto foi desenvolvido com HTML, CSS e JavaScript, utilizando POO.
+                Este projeto foi desenvolvido com HTML, CSS e JavaScript, com foco na Programação Orientada a Objetos (POO).
                 <br /><br />
-                O objetivo é mostrar uma lista de perfis do GitHub com base em um nome de usuário.
-                Apesar de sua funcionalidade ser simples, implementá-la evitando erros e tornando o código o mais limpo possível foi o verdadeiro desafio.<br /><br /> 🔗 Ver no Github Pages
+                O objetivo do projeto é mostrar uma lista de perfis do GitHub com base em um nome de usuário. Embora a funcionalidade seja simples, o verdadeiro desafio foi aplicar POO para manter o código limpo, organizado e livre de erros.
+                <br /><br /> 
+                🔗 Ver no Github Pages
             </>
         ),
         link: "https://gabrielth58.github.io/Profile-Search-Github-API/",

@@ -30,7 +30,7 @@ export function About() {
                             Além disso, tento ajudar essas pessoas com o que já aprendi. 😁
                         </p>
                         <p>
-                            Estou estudando tecnologias como HTML, CSS, JavaScript, TypeScript, React, Next.js, Git, GitHub, Tailwind e Jest.
+                            Estou estudando tecnologias como HTML, CSS, JavaScript, TypeScript, React, Wordpress, NodeJS, Express e Jest.
                             Meu objetivo é me tornar um profissional competente e relevante na área de tecnologia.
                         </p>
                         
