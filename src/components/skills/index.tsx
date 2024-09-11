@@ -26,6 +26,11 @@ export function Skills() {
             description: 'Construção de interfaces de usuário reutilizáveis e gerenciamento de estado com hooks e context API'
         },
         {
+            name: 'Wordpress',
+            icon: 'devicon-wordpress-plain',
+            description: 'Criação de sites e blogs Wordpress com estrutura de arquitetura e design responsivo'
+        },
+        {
             name: 'Html',
             icon: 'devicon-html5-plain-wordmark',
             description: 'Criação de estruturas semânticas e acessíveis'
@@ -45,7 +50,6 @@ export function Skills() {
             icon: 'devicon-git-plain',
             description: 'Controle de versão com gerenciamento de branches, commits e merge para colaboração eficiente em projetos'
         },
-
     ]
 
     return (

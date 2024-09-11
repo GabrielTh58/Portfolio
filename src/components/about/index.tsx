@@ -23,14 +23,15 @@ export function About() {
                     <AboutInfo>
                         <p>
                             <strong>Olá! Me chamo Gabriel Correia e sou um desenvolvedor front-end em formação!</strong>
-                            Sou estudante de Engenharia de Software e sempre fui autodidata em várias áreas. Atualmente, estou focado em programação front-end.
+                            Sou estudante de Engenharia de Software e sempre fui autodidata em várias áreas. No momento, estou focado em aprimorar minhas
+                             habilidades em programação front-end e iniciando minha jornada como freelancer.
                         </p>
                         <p>
-                            Estou sempre me desafiando com novos projetos e participando de comunidades de programação para buscar feedback de outros desenvolvedores.
-                            Além disso, tento ajudar essas pessoas com o que já aprendi. 😁
+                            Minha experiência como empreendedor no ramo de estética automotiva me proporcionou habilidades valiosas em gestão, resolução de problemas e trabalho em equipe.
+                             Essas competências complementam meu trabalho como programador e me ajudam a abordar desafios técnicos com uma perspectiva prática.
                         </p>
                         <p>
-                            Estou estudando tecnologias como HTML, CSS, JavaScript, TypeScript, React, Wordpress, NodeJS, Express e Jest.
+                            Atualmente, estou estudando tecnologias como HTML, CSS, JavaScript, TypeScript, React, Wordpress, NodeJS, Express e Jest.
                             Meu objetivo é me tornar um profissional competente e relevante na área de tecnologia.
                         </p>
                         
