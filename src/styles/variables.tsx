@@ -4,7 +4,6 @@ export const variables = css`
     :root {
         --primary-color: #0817e1;
         --secondary-color: #015c92;
-        /* --secondary-color: #2d82b5; background: linear-gradient(to bottom, #000000, #0d0d0d); */
         --white-color: #fff;
         --dark-background-color: #040203;    
         --light-gray-background-color: #353535;    
@@ -22,4 +21,4 @@ export const variables = css`
     :root {
         --mobile-padding: 30px;
     }
-`;
+`

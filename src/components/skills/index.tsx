@@ -13,7 +13,7 @@ export function Skills() {
         {
             name: 'Javascript',
             icon: 'devicon-javascript-plain',
-            description: 'Criação de aplicações web dinâmicas e interativas, integração com APIs, e constante busca por novas técnicas para otimizar a experiência do usuário e a performance do código'
+            description: 'Desenvolvimento de aplicações web dinâmicas, integração com APIs e otimização da experiência do usuário'
         },
         {
             name: 'Typescript',
@@ -28,7 +28,7 @@ export function Skills() {
         {
             name: 'Wordpress',
             icon: 'devicon-wordpress-plain',
-            description: 'Criação de sites e blogs Wordpress com estrutura de arquitetura e design responsivo'
+            description: 'Criação de sites Wordpress com estrutura de arquitetura e design responsivo'
         },
         {
             name: 'Html',
@@ -46,7 +46,7 @@ export function Skills() {
             description: 'Plataforma de hospedagem para projetos Git, facilitando a colaboração e o versionamento de código'
         },
         {
-            name: 'Github',
+            name: 'Git',
             icon: 'devicon-git-plain',
             description: 'Controle de versão com gerenciamento de branches, commits e merge para colaboração eficiente em projetos'
         },

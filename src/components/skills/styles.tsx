@@ -20,13 +20,14 @@ export const SkillInfo = styled.div`
     i,
     h3,
     p{
-      color: var(--primary-color);
+      color: var(--secondary-color);
     }
   }
 
   h3 {
     font-size: var(--extra-large-font-size);
     font-weight: 500;
+    margin-top: 20px;
     margin-bottom: 20px;
     color: var(--primary-color);
   }
