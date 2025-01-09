@@ -26,6 +26,11 @@ export function Skills() {
             description: 'Construção de interfaces de usuário reutilizáveis e gerenciamento de estado com hooks e context API'
         },
         {
+            name: 'Next.js',
+            icon: 'devicon-nextjs-plain',
+            description: 'Framework React para desenvolvimento de aplicações web rápidas, com renderização do lado do servidor (SSR) e geração de sites estáticos (SSG).'
+        },
+        {
             name: 'Wordpress',
             icon: 'devicon-wordpress-plain',
             description: 'Criação de sites Wordpress com estrutura de arquitetura e design responsivo'
