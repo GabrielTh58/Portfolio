@@ -68,6 +68,12 @@ export const skills: SkillItem[] = [
       "Modelagem e consultas em bancos de dados relacionais, com foco em performance e integridade",
   },
   {
+    name: "Jest",
+    icon: "devicon-jest-plain",
+    description:
+      "Testes unitários e de integração para garantir a qualidade e confiabilidade de código",
+  },
+  {
     name: "Docker",
     icon: "devicon-docker-plain",
     description:
