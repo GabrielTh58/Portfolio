@@ -12,7 +12,7 @@ export const SkillsContainer = styled(Row)`
 `
 
 export const SkillInfo = styled.div`
-  max-width: 350px;
+  max-width: 300px;
   padding: 40px 20px;
   transition: all 0.3s ease;  
 
