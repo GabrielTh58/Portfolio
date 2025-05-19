@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for portfolioia-quiet-sound-7623 on 2025-05-15T23:52:22-03:00
+# fly.toml app configuration file generated for portfolioia-purple-lake-9741 on 2025-05-19T02:34:13-03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'portfolioia-quiet-sound-7623'
+app = 'portfolioia-purple-lake-9741'
 primary_region = 'gru'
 
 [build]

@@ -16,9 +16,9 @@ export default async function Home() {
       <Container className="flex flex-col items-center gap-10 py-16">
         <Projetos titulo="Destaque" lista={projetos.destaques} />
         <Projetos titulo="Web" lista={projetos.web} />
-        <Projetos titulo="Mobile" lista={projetos.mobile} />
-        <Projetos titulo="Jogos" lista={projetos.jogos} />
-        <Curriculo  tecnologias={tecnologias.destaques}/>      
+        {/* <Projetos titulo="Mobile" lista={projetos.mobile} />
+        <Projetos titulo="Jogos" lista={projetos.jogos} /> */}
+        <Curriculo  tecnologias={tecnologias.todas}/>      
       </Container>
     </div>
   );
