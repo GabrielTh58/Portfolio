@@ -15,15 +15,14 @@ export default function MiniCV() {
                             text-transparent bg-clip-text text-2xl font-bold
                         "
 					>
-						Leonardo Leitão
+						Gabriel Oliveira
 					</span>
-					<span>CTO da Cod3r Ensino e Consultoria</span>
+					<span>Desenvovedor Web Junior</span>
 				</div>
 				<p className="text-sm text-center md:text-left lg:text-center xl:text-left">
-					Mestre em Informática Aplicada e fundador da Cod3r, já treinou mais de 420.000
-					alunos. São mais de 16 anos como professor. Há 20 anos atua na área como
-					desenvolvedor de softwares e trabalhou como arquiteto de software em grandes
-					projetos para o Governo Federal.
+					Estudante de Engenharia de Software e Desenvolvedor Web Fullstack, com foco em front-end. Tenho experiência prática em projetos usando Typescript,
+					React, Node.js, Nest, PostgreSQL, TailwindCss. Apaixonado por transformar ideias em soluções
+					digitais e criar interfaces que geram valor para negócios.
 				</p>
 			</div>
 		</div>

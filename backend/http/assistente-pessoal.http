@@ -6,11 +6,5 @@ Content-Type: application/json
     "mensagem": "Você conhece React ?"
 }
 
-# ####
-# POST http://localhost:5678/webhook-test/assistente-pessoal
-# Content-Type: application/json
-
-# {
-#     "chatId": "123456",
-#     "mensagem": "Bom dia"
-# }
+####
+GET https://portfolioia-quiet-sound-7623.fly.dev/projetos
