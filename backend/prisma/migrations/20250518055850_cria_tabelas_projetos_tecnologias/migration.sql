@@ -1,12 +1,27 @@
-/*
-  Warnings:
+-- CreateTable
+CREATE TABLE "tecnologias" (
+    "id" SERIAL NOT NULL,
+    "nome" TEXT NOT NULL,
+    "descricao" TEXT NOT NULL,
+    "imagem" TEXT NOT NULL,
+    "destaque" BOOLEAN NOT NULL DEFAULT false,
 
-  - You are about to drop the column `imagens` on the `projetos` table. All the data in the column will be lost.
+    CONSTRAINT "tecnologias_pkey" PRIMARY KEY ("id")
+);
 
-*/
--- AlterTable
-ALTER TABLE "projetos" DROP COLUMN "imagens",
-ADD COLUMN     "imagem" TEXT[];
+-- CreateTable
+CREATE TABLE "projetos" (
+    "id" SERIAL NOT NULL,
+    "nome" TEXT NOT NULL,
+    "descricao" TEXT NOT NULL,
+    "imagens" TEXT[],
+    "nivel" INTEGER NOT NULL,
+    "tipo" TEXT NOT NULL,
+    "destaque" BOOLEAN NOT NULL DEFAULT false,
+    "repositorio" TEXT NOT NULL,
+
+    CONSTRAINT "projetos_pkey" PRIMARY KEY ("id")
+);
 
 -- CreateTable
 CREATE TABLE "_ProjetoToTecnologia" (
