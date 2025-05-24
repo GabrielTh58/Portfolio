@@ -1,4 +1,3 @@
-
 import Image from "next/image"
 
 export default function MiniCV() {
@@ -17,12 +16,12 @@ export default function MiniCV() {
 					>
 						Gabriel Oliveira
 					</span>
-					<span>Desenvovedor Web Junior</span>
+					<span>Desenvolver Web Junior</span>
 				</div>
 				<p className="text-sm text-center md:text-left lg:text-center xl:text-left">
 					Estudante de Engenharia de Software e Desenvolvedor Web Fullstack, com foco em front-end. Tenho experiência prática em projetos usando Typescript,
 					React, Node.js, Nest, PostgreSQL, TailwindCss. Apaixonado por transformar ideias em soluções
-					digitais e criar interfaces que geram valor para negócios.
+					digitais e criar interfaces que geram valor para negócios
 				</p>
 			</div>
 		</div>

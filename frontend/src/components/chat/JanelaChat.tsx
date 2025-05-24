@@ -2,16 +2,16 @@
 import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from "react"
 import { IconMessages, IconReload, IconSend } from "@tabler/icons-react"
 import useChat from "@/hooks/useChat"
-import Image from "next/image"
 import BalaoMensagem from "./BalaoMensagem"
+import Image from "next/image"
 
 export default function JanelaChat() {
-	const { mensagens, pensando, adicionarMensagens, limparMensagens } = useChat()
+	const { mensagens, pensando, adicionarMensagem, limparMensagens } = useChat()
 	const [texto, setTexto] = useState("")
 	const fimChatRef = useRef<HTMLDivElement>(null)
 
 	function enviarMensagem() {
-		adicionarMensagens(texto)
+		adicionarMensagem(texto)
 		setTexto("")
 	}
 

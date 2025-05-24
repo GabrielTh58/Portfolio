@@ -14,7 +14,7 @@ export default function Menu() {
 				Projetos
 			</MenuItem>
 			<MenuItem
-				href="https://api.whatsapp.com/send/?phone=5541995667727&text&type=phone_number"
+				href="https://api.whatsapp.com/send/?phone=5585987718085&text&type=phone_number"
 				selecionado={false}
 				novaAba={true}
 			>
