@@ -2,8 +2,6 @@ import Image from "next/image"
 import Container from "./Container"
 import Link from "next/link"
 import Menu from "./Menu"
-import { IconCode } from "@tabler/icons-react"
-
 export default function Cabecalho() {
 	return (
 		<header className="w-full flex items-center h-16 bg-black/50">
