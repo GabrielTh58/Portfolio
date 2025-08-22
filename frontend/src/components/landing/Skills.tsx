@@ -24,7 +24,7 @@ export default function Skills({ tecnologias }: SkillsProps) {
                 </div>
 
                 <div className="flex justify-center items-center gap-3 lg:gap-5 flex-wrap w-full md:w-4/5 xl:w-2/5">
-                    {tecnologias.map((tecnologia: Tecnologia) => (
+                    {tecnologias.sort((a, b) => a.id - b.id).map((tecnologia: Tecnologia) => (
                         <div
                             key={tecnologia.id} 
                             onMouseEnter={() => handleMouseEnter(tecnologia)}
