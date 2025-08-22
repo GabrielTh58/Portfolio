@@ -4,4 +4,5 @@ export default interface Tecnologia{
     descricao: string;
     imagem: string;
     destaque: boolean;
+    cor: string;
 }
