@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -20,7 +14,8 @@ model Tecnologia {
   descricao String
   imagem    String
   destaque  Boolean   @default(false)
-  projetos  Projeto[]
+  cor       String    @default("#2b7fff")
+  projetos  Projeto[] @relation("ProjetoToTecnologia")
 
   @@map("tecnologias")
 }
@@ -34,7 +29,7 @@ model Projeto {
   tipo        String
   destaque    Boolean      @default(false)
   repositorio String
-  tecnologias Tecnologia[]
+  tecnologias Tecnologia[] @relation("ProjetoToTecnologia")
 
   @@map("projetos")
 }

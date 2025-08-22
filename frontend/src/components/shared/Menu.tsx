@@ -13,33 +13,34 @@ export default function Menu() {
 			<MenuItem href="/projeto/1" selecionado={caminho.startsWith("/projeto")}>
 				Projetos
 			</MenuItem>
-			<MenuItem
-				href="https://api.whatsapp.com/send/?phone=5585987718085&text&type=phone_number"
-				selecionado={false}
-				novaAba={true}
-			>
-				Contato
-			</MenuItem>
 		</nav>
 	)
 }
 
 function MenuItem(props: {
-	href: string
-	children: React.ReactNode
-	selecionado: boolean
-	novaAba?: boolean
+  href: string
+  children: React.ReactNode
+  selecionado: boolean
+  novaAba?: boolean
 }) {
-	return (
-		<Link href={props.href} target={props.novaAba ? "_blank" : "_self"}>
-			<span
-				className={`
-                    flex items-center gap-2 text-sm border-red-600 hover:text-white
-                    ${props.selecionado ? "border-b-4 text-white" : "text-zinc-300"}    
-                `}
-			>
-				{props.children}
-			</span>
-		</Link>
-	)
+  return (
+    <Link href={props.href} target={props.novaAba ? "_blank" : "_self"}>
+      <span
+        className={`
+          flex items-center gap-2 text-sm hover:text-white
+          ${props.selecionado ? "text-white" : "text-zinc-300 hover:text-white"}
+        `}
+        style={
+          props.selecionado
+            ? {
+                borderBottom: "2px solid transparent",
+                borderImage: "linear-gradient(90deg, #2B7FFF, #1A4C99) 1",
+              }
+            : {}
+        }
+      >
+        {props.children}
+      </span>
+    </Link>
+  )
 }

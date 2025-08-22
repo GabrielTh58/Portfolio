@@ -4,6 +4,13 @@ import Container from "@/components/shared/Container"
 import Curriculo from "@/components/curriculo"
 import Principal from "@/components/landing/Principal"
 import Projetos from "@/components/projetos/Projetos"
+import Sobre from "@/components/landing/Sobre"
+import Skills from "@/components/landing/Skills"
+import Contato from "@/components/landing/contato/Contato"
+import TituloSecao from "@/components/shared/TituloSecao"
+import SecaoProjetos from "@/components/projetos/SecaoProjetos"
+import CallToAction from "@/components/landing/CallToAction"
+import Footer from "@/components/shared/Footer"
 
 export default async function Home() {
 	const tecnologias = await obterTecnologias()
@@ -12,13 +19,17 @@ export default async function Home() {
 	return (
 		<div>
 			<Principal tecnologias={tecnologias.destaques} />
-			<Container className="py-16 flex flex-col items-center gap-10">
-				<Projetos titulo="Destaque" lista={projetos.destaques} />
-				<Projetos titulo="Web" lista={projetos.web} />
-				<Projetos titulo="Mobile" lista={projetos.mobile} />
-				<Projetos titulo="Jogos" lista={projetos.jogos} />
-				<Curriculo tecnologias={tecnologias.todas} />
-			</Container>
+			<div className="mt-20">
+				<Container className="py-16 flex flex-col items-center gap-50">
+					<Sobre />
+					<SecaoProjetos projetos={projetos} />
+					<Skills tecnologias={tecnologias.todas} />
+					<Contato />
+					<CallToAction />
+					{/* <Curriculo tecnologias={tecnologias.todas} /> */}
+				</Container>
+				<Footer />
+			</div>
 		</div>
 	)
 }
