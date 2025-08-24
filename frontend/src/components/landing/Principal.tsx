@@ -10,16 +10,15 @@ export default function Principal(props: PrincipalProps) {
 	return (
 		<div
 			className="
-                flex flex-col items-center justify-center h-[800px]
-                bg-[url('/bg-hero.png')] bg-cover bg-center
-            "
+                flex flex-col items-center justify-center w-full h-[600px] lg:h-[800px]
+                bg-[url('/bg-hero.png')] bg-cover bg-right sm:bg-center bg-no-repeat"
 		>
 			<Cabecalho />
 			<div className="flex-1 w-full flex flex-col justify-center items-center gap-5">
 				<div className="flex flex-col items-center">
-					<h1 className="flex gap-3 items-center mb-4">
-						<span className="w-2 h-2 rounded-full bg-blue-500"></span>
-						<span className="text-3xl sm:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-300">
+					<h1 className="flex gap-1 sm:gap-3 items-center mb-4">
+						<span className="w-2 h-2 rounded-full bg-blue-500 font-medium"></span>
+						<span className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-400">
 							Gabriel Oliveira
 						</span>
 						<span className="w-2 h-2 rounded-full bg-blue-500"></span>

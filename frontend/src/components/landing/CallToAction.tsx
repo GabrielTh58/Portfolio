@@ -3,7 +3,7 @@ import TituloSecao from "../shared/TituloSecao";
 
 export default function CallToAction() {
   return (
-    <div className="w-full flex flex-col items-center justify-center px-4 mb-32">
+    <section className="w-full flex flex-col items-center justify-center px-4 mb-48">
       <div className="w-full max-w-3xl flex flex-col items-center">
         <TituloSecao titulo="Cada ponte nasce de uma escolha" center />
         <p className="text-zinc-400 mb-10 max-w-xl text-center">
@@ -23,6 +23,6 @@ export default function CallToAction() {
           />
         </button>
       </div>
-    </div>
+    </section>
   )
 }

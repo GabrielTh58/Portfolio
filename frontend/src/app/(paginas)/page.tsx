@@ -1,7 +1,6 @@
 import { obterProjetos } from "@/functions/projetos"
 import { obterTecnologias } from "@/functions/tecnologias"
 import Container from "@/components/shared/Container"
-import Curriculo from "@/components/curriculo"
 import Principal from "@/components/landing/Principal"
 import Sobre from "@/components/landing/Sobre"
 import Skills from "@/components/landing/Skills"
@@ -17,14 +16,13 @@ export default async function Home() {
 	return (
 		<div>
 			<Principal tecnologias={tecnologias.destaques} />
-			<div className="mt-20">
-				<Container className="py-16 flex flex-col items-center gap-50">
+			<div className="lg:mt-10 2xl:bg-[url('/bg-portfolio.png')] bg-contain bg-repeat-space">
+				<Container className="py-16 flex flex-col items-center gap-56">
 					<Sobre />
 					<SecaoProjetos projetos={projetos} />
 					<Skills tecnologias={tecnologias.todas} />
 					<Contato />
 					<CallToAction />
-					{/* <Curriculo tecnologias={tecnologias.todas} /> */}
 				</Container>
 				<Footer />
 			</div>
