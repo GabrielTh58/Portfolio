@@ -11,5 +11,6 @@ export default interface Proejeto{
     nivel: Nivel
     repositorio: string
     destaque: boolean
+    tags: string[]
     tecnologias: Tecnologia[]
 }

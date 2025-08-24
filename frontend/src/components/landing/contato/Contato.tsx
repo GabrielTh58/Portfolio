@@ -4,7 +4,7 @@ import FormularioContato from "./FormularioContato"
 
 export default function Contato(){
     return(
-        <section className="w-full" id="contato">
+        <section className="w-full " id="contato">
             <TituloSecao titulo="Contato" />
 
             <div className="w-full flex flex-col gap-14 items-center md:items-start md:gap-0 md:flex-row md:justify-between ">

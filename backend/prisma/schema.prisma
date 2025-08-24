@@ -29,6 +29,7 @@ model Projeto {
   tipo        String
   destaque    Boolean      @default(false)
   repositorio String
+  tags        String[]
   tecnologias Tecnologia[] @relation("ProjetoToTecnologia")
 
   @@map("projetos")

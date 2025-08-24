@@ -16,7 +16,7 @@ export default function Skills({ tecnologias }: SkillsProps) {
     }
 
     return (
-        <section className="w-full">
+        <section className="w-full bg-[url('/bg-sobre.png')] bg-contain ">
             <TituloSecao titulo="Conhecimentos" />
             <div className="flex flex-col gap-12 xl:gap-0 md:flex-row justify-between">
                 <div className="w-full md:w-3/5 lg:2/5 text-center md:text-start">

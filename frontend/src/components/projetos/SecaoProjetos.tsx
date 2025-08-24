@@ -12,14 +12,16 @@ interface ProjetosProps {
   };
 }
 
-export default function SecaoProjetos({projetos}: ProjetosProps) {
-    return (
-        <div className="w-full">
-            <TituloSecao titulo={"Projetos"} />
-            <Projetos titulo="Destaque" lista={projetos.destaques} />
-            <Projetos titulo="Web" lista={projetos.web} />
-            <Projetos titulo="Mobile" lista={projetos.mobile} />
-            <Projetos titulo="Jogos" lista={projetos.jogos} />
-        </div>
-    )
+export default function SecaoProjetos({ projetos }: ProjetosProps) {
+  return (
+    <section className="w-full">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full mb-20">
+        <TituloSecao titulo={"Projetos"} />
+        <p className="text-slate-400 text-center md:text-start max-w-md">
+          Uma seleção de trabalhos que demonstram minhas habilidades em desenvolvimento web.
+        </p>
+      </div>
+      <Projetos lista={projetos.todos} />
+    </section>
+  )
 }
