@@ -17,7 +17,7 @@ export default function Sobre(){
                     Construindo pontes entre ideias e soluções
                 </h3>
                 <p className="text-xl sm:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-300 mb-5">Desenvolvedor full stack</p>
-                <p className="text-zinc-400 text-center lg:text-start">Estudante de Engenharia de Software e Desenvolvedor Web Fullstack, com foco em front-end. Tenho experiência prática em projetos usando Typescript, React, Node.js, Nest, PostgreSQL, TailwindCss. Apaixonado por transformar ideias em soluções digitais e criar interfaces que geram valor para negócios</p>
+                <p className="text-slate-400 text-center lg:text-start">Estudante de Engenharia de Software e Desenvolvedor Web Fullstack, com foco em front-end. Tenho experiência prática em projetos usando Typescript, React, Node.js, Nest, PostgreSQL, TailwindCss. Apaixonado por transformar ideias em soluções digitais e criar interfaces que geram valor para negócios</p>
             </div>
         </section>
     )

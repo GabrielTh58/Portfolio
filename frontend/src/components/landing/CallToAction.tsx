@@ -6,7 +6,7 @@ export default function CallToAction() {
     <section className="w-full flex flex-col items-center justify-center px-4 mb-48">
       <div className="w-full max-w-3xl flex flex-col items-center">
         <TituloSecao titulo="Cada ponte nasce de uma escolha" center />
-        <p className="text-zinc-400 mb-10 max-w-xl text-center">
+        <p className="text-slate-400 mb-10 max-w-xl text-center">
           Estou disponível para projetos freelance e oportunidades em empresas
         </p>
 

@@ -20,7 +20,7 @@ export default function Skills({ tecnologias }: SkillsProps) {
             <TituloSecao titulo="Conhecimentos" />
             <div className="flex flex-col gap-12 xl:gap-0 md:flex-row justify-between">
                 <div className="w-full md:w-3/5 lg:2/5 text-center md:text-start">
-                    <p className="text-zinc-400">{descricao}</p>
+                    <p className="text-slate-400">{descricao}</p>
                 </div>
 
                 <div className="flex justify-center items-center gap-3 lg:gap-5 flex-wrap w-full md:w-4/5 xl:w-2/5">

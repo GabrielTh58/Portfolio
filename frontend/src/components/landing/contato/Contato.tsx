@@ -9,7 +9,7 @@ export default function Contato(){
 
             <div className="w-full flex flex-col gap-14 items-center md:items-start md:gap-0 md:flex-row md:justify-between ">
                 <div className="md:w-2/5 max-w-sm text-center md:text-start">
-                    <p className="font-fira mb-10 md:mb-16">Tem um projeto em mente ou uma vaga que se encaixa no meu perfil? Vamos conversar!</p>
+                    <p className="font-fira mb-10 md:mb-16 text-white/90">Tem um projeto em mente ou uma vaga que se encaixa no meu perfil? Vamos conversar!</p>
 
                     <div className="flex justify-center md:justify-start">
                         <RedesSociais/>
