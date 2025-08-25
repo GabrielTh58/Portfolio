@@ -30,6 +30,7 @@ model Projeto {
   destaque    Boolean      @default(false)
   repositorio String
   tags        String[]
+  ordem       Decimal?     @db.Decimal
   tecnologias Tecnologia[] @relation("ProjetoToTecnologia")
 
   @@map("projetos")

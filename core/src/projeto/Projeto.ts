@@ -12,5 +12,6 @@ export default interface Proejeto{
     repositorio: string
     destaque: boolean
     tags: string[]
+    ordem: number
     tecnologias: Tecnologia[]
 }
