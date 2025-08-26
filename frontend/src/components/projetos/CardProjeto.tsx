@@ -1,5 +1,4 @@
 'use client'
-import { obterProjeto } from "@/functions/projetos";
 import { Projeto } from "@core";
 import { IconExternalLink } from "@tabler/icons-react";
 import Image from "next/image";

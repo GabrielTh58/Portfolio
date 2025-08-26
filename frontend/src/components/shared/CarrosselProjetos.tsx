@@ -16,12 +16,12 @@ export interface CarrosselImagensProps {
 
 export default function CarrosselProjetos({imagens, idProximoProjeto, idProjetoAnterior}: CarrosselImagensProps) {
 	const router = useRouter()
-	const navegarParaProximoProjeto = (e: React.MouseEvent) => {
+	const navegarParaProximoProjeto = () => {
 		if (!idProximoProjeto) return
 		router.push(`/projeto/${idProximoProjeto}`)
 	}
 
-	const navegarParaProjetoAnterior = (e: React.MouseEvent) => {
+	const navegarParaProjetoAnterior = () => {
 		if (!idProjetoAnterior) return
 		router.push(`/projeto/${idProjetoAnterior}`)
 	}

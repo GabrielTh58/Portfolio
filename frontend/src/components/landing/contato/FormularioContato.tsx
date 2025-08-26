@@ -57,8 +57,8 @@ export default function FormularioContato() {
       if (!response.ok) throw new Error(data.message || 'Ocorreu um erro ao enviar a mensagem.')
       toast.success('Mensagem enviada com sucesso! Obrigado pelo contato.')
       setForm({ nome: "", email: "", mensagem: "", extra: "" })
-    } catch (error: any) {
-      const message = error?.message ?? 'Erro desconhecido. Tente novamente mais tarde.'
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : (error as { message?: string }).message ?? 'Erro desconhecido. Tente novamente mais tarde.'
       setErro(message)
       toast.error(message)
     } finally {

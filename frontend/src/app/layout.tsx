@@ -3,7 +3,6 @@ import { Fira_Code } from "next/font/google"
 import { Bruno_Ace } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "sonner"
-import { style } from "motion/react-client"
 
 export const metadata: Metadata = {
 	title: "GabCode",

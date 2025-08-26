@@ -1,13 +1,13 @@
-import { obterProjetos } from "@/functions/projetos"
-import { obterTecnologias } from "@/functions/tecnologias"
-import Container from "@/components/shared/Container"
+import CallToAction from "@/components/landing/CallToAction"
 import Principal from "@/components/landing/Principal"
-import Sobre from "@/components/landing/Sobre"
 import Skills from "@/components/landing/Skills"
+import Sobre from "@/components/landing/Sobre"
 import Contato from "@/components/landing/contato/Contato"
 import SecaoProjetos from "@/components/projetos/SecaoProjetos"
-import CallToAction from "@/components/landing/CallToAction"
+import Container from "@/components/shared/Container"
 import Footer from "@/components/shared/Footer"
+import { obterProjetos } from "@/functions/projetos"
+import { obterTecnologias } from "@/functions/tecnologias"
 
 export default async function Home() {
 	const tecnologias = await obterTecnologias()
