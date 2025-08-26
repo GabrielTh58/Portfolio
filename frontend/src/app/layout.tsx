@@ -2,9 +2,11 @@ import type { Metadata } from "next"
 import { Fira_Code } from "next/font/google"
 import { Bruno_Ace } from "next/font/google"
 import "./globals.css"
+import { Toaster } from "sonner"
+import { style } from "motion/react-client"
 
 export const metadata: Metadata = {
-	title: "Portfolio Dev Web",
+	title: "GabCode",
 	description: "Portfólio de projetos de desenvolvimento",
 }
 
@@ -26,7 +28,21 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-BR">
-			<body className={`${fira.className} ${brunoAce.variable} antialiased`}>{children}</body>
+			<body className={`${fira.className} ${brunoAce.variable} antialiased`}>
+				{children}
+				<Toaster
+					position="top-right" 
+					toastOptions={{
+						style: {
+							background: "var(--background)", 
+							color: "#E0E0E0",
+							border: "1px solid #155dfc", 
+							boxShadow: '0 4px 12px rgba(0,0,0,0.3)' 
+						}
+					}}
+				/>
+			</body>
+			
 		</html>
 	)
 }

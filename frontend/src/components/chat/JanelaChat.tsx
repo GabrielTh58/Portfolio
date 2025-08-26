@@ -66,7 +66,7 @@ export default function JanelaChat() {
 					}}
 				/>
 				<button
-					className="flex justify-center items-center min-h-8 min-w-8 rounded-full bg-red-500"
+					className="flex justify-center items-center min-h-8 min-w-8 rounded-full bg-blue-500"
 					onClick={enviarMensagem}
 				>
 					<IconSend className="text-white" size={18} />

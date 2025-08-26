@@ -1,0 +1,8 @@
+POST http://localhost:4000/contato
+Content-Type: application/json
+
+{
+  "nome": "Teste",
+  "email": "email@pessoa.com",
+  "mensagem": "Olá, gostei muito do seu portfólio!"
+}

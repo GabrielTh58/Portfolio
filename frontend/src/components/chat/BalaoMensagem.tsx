@@ -39,7 +39,7 @@ function BalaoDireito(props: BalaoMensagemProps) {
 			{!props.omitirAutor && (
 				<span className="text-xs text-zinc-600">{props.mensagem.autor}</span>
 			)}
-			<div className="bg-red-700 text-white px-7 py-4 sm:w-80 rounded-l-3xl rounded-br-3xl">
+			<div className="bg-blue-800 text-white px-7 py-4 sm:w-80 rounded-l-3xl rounded-br-3xl">
 				<ConteudoMD markdown={props.mensagem.texto} />
 			</div>
 		</div>
