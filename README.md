@@ -13,7 +13,7 @@ Este é o repositório do meu portfólio pessoal, um projeto Full Stack desenvol
 
 ## 🛠️ Tecnologias
 - **Frontend:** React, Next.js, Tailwind CSS  
-- **Backend / APIs:** NestJS, Supabase  
+- **Backend / APIs:** NestJS, Supabase, prisma  
 - **Automação / IA:** n8n + Gemini (Google AI)
 - **Linguagens:** JavaScript / TypeScript
 - **Componentes / UI:** shadcn/ui
