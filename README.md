@@ -7,7 +7,7 @@ Este é o repositório do meu portfólio pessoal, um projeto Full Stack desenvol
 ## 📸 Demonstração (Preview)
 - **Site (deploy):** `<https://seu-portfolio.vercel.app>`  
 - **Preview / Screenshot:**  
-  ![Preview do Portfólio](./public/preview.png)
+  ![Preview do Portfólio](/frontend/public/preview.png)
 
 ---
 
