@@ -31,16 +31,29 @@ export default function CardProjeto ( {projeto}: CardProjetoProps) {
                                 <span key={tag} className="text-xs font-semibold text-cyan-400 bg-cyan-400/10 px-3 py-1 rounded-full">{tag}</span>
                             ))}
                         </div>
-                        <Link
-                            href={`/projeto/${projeto.id}`}
-                            target="_blank"
-                            rel="noopener noreferrer" 
-                            className="inline-flex items-center gap-2 text-sm font-semibold text-slate-200 bg-white/5 px-3 py-1.5 rounded-lg transition-all duration-300 
-                                hover:bg-blue-400 hover:text-slate-800 hover:scale-105 hover:shadow-lg"
-                            >
-                                Ver Projeto 
-                                <IconExternalLink />
-                        </Link>
+                        {projeto.repositorio ? (
+                             <Link
+                                href={`/projeto/${projeto.id}`}
+                                target="_blank"
+                                rel="noopener noreferrer" 
+                                className="inline-flex items-center gap-2 text-sm font-semibold text-slate-200 bg-white/5 px-3 py-1.5 rounded-lg transition-all duration-300 
+                                    hover:bg-blue-400 hover:text-slate-800 hover:scale-105 hover:shadow-lg"
+                                >
+                                    Ver Projeto 
+                                    <IconExternalLink />
+                            </Link>
+                        ) : (
+                            <Link
+                                href={projeto.link}
+                                target="_blank"
+                                rel="noopener noreferrer" 
+                                className="inline-flex items-center gap-2 text-sm font-semibold text-slate-200 bg-white/5 px-3 py-1.5 rounded-lg transition-all duration-300 
+                                    hover:bg-blue-400 hover:text-slate-800 hover:scale-105 hover:shadow-lg"
+                                >
+                                    Preview 
+                                    <IconExternalLink />
+                            </Link>
+                        )}                        
                     </div>
                 </div>
             </div>

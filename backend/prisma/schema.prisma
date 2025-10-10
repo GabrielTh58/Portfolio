@@ -26,7 +26,7 @@ model Projeto {
   descricao   String
   imagens     String[]
   nivel       Int
-  tipo        String
+  link        String
   destaque    Boolean      @default(false)
   repositorio String
   tags        String[]
