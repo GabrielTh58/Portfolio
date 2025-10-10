@@ -5,9 +5,6 @@ import Projetos from "./Projetos";
 interface ProjetosProps {
   projetos: {
     todos: Projeto[]
-    mobile: Projeto[]
-    web: Projeto[]
-    jogos: Projeto[]
     destaques: Projeto[]
   };
 }
