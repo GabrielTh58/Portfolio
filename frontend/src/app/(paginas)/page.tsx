@@ -9,6 +9,7 @@ import Footer from "@/components/shared/Footer"
 import { obterProjetos } from "@/functions/projetos"
 import { obterTecnologias } from "@/functions/tecnologias"
 
+
 export default async function Home() {
 	const tecnologias =  (await obterTecnologias()) ?? { todas: [] } 
 	const projetos =  (await obterProjetos()) ?? { todos: [] }
