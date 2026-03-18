@@ -6,5 +6,4 @@ Content-Type: application/json
     "mensagem": "Você conhece React ?"
 }
 
-####
-GET https://portfolioia-quiet-sound-7623.fly.dev/projetos
+

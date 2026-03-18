@@ -1,0 +1,6 @@
+###
+GET http://localhost:4000/projetos
+
+
+####
+GET https://portfolioia-quiet-sound-7623.fly.dev/projetos
