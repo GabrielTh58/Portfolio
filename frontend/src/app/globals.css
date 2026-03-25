@@ -87,10 +87,22 @@
 	}
 }
 
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 35s linear infinite;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
 @layer components{
 	.gradiente-principal{
 		@apply bg-gradient-to-r from-blue-500 to-[#1A4C99];
 	}
+	
 }
 
 [data-badges] {

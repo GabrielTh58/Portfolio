@@ -8,7 +8,7 @@ export interface TecnologiasProps {
 
 export default function Tecnologias(props: TecnologiasProps) {
 	return props.lista ? (
-		<div className="flex justify-center gap-4 flex-wrap w-4/5">
+		<div className="flex justify-center gap-4 flex-wrap w-full">
 			{props.lista.sort((a: Tecnologia, b: Tecnologia) => a.nome.localeCompare(b.nome)).map((tecnologia) => (
 				<div key={tecnologia.id} className="flex flex-col items-center gap-1">
 					<span

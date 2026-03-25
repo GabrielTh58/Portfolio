@@ -16,7 +16,7 @@ export type UseFormContatoProps = {
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-export function validador(values: ValoresContato): string | null {
+function validador(values: ValoresContato): string | null {
   const nome = values.nome.trim()
   const email = values.email.trim()
   const mensagem = values.mensagem.trim()

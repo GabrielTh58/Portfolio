@@ -7,7 +7,7 @@ interface LogoProps{
 }
 function Logo({width, height}: LogoProps) {
     return (
-        <Link href="/" className="hidden sm:flex">
+        <Link href="/" className="">
             <Image src="/logo.png" alt="Logo" width={width} height={height} className="object-cover" />
         </Link>
     )

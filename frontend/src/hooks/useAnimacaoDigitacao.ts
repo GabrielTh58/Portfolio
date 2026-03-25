@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
 
-export function useAnimacaoDigitacao(texto: string, delay: number, inicioDelay = 0) {
+export function useAnimacaoDigitacao(texto: string, velocidade = 50, inicioDelay = 0) {
     const [displayed, setDisplayed] = useState("");
+    const [iniciou, setIniciou] = useState(false);
 
     useEffect(() => {
-        const timeout = setTimeout(() => {
-            let index = 0;
-            const interval = setInterval(() => {
-                if (index <= texto.length) {
-                    setDisplayed(texto.slice(0, index));
-                    index++;
-                } else {
-                    clearInterval(interval);
-                }
-            }, delay);
-            return () => clearInterval(interval);
-        }, inicioDelay);
-
+        const timeout = setTimeout(() => setIniciou(true), inicioDelay);
         return () => clearTimeout(timeout);
-    }, [texto, delay, inicioDelay]);
+    }, [inicioDelay]);
+
+    useEffect(() => {
+        if (!iniciou) return;
+
+        if (displayed.length < texto.length) {
+            const timeout = setTimeout(() => {
+                setDisplayed(texto.slice(0, displayed.length + 1));
+            }, velocidade);
+            return () => clearTimeout(timeout);
+        }
+    }, [displayed, iniciou, texto, velocidade]);
 
     return displayed;
 }
