@@ -13,7 +13,7 @@ export default function InspecaoTech({ techAtiva }: InspecaoTechProps) {
                     <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
                         <Code2 size={18} style={{ color: techAtiva.cor }} />
                         <span className="font-mono text-xs tracking-widest uppercase opacity-70" style={{ color: techAtiva.cor }}>
-                            // runtime_info
+                           {"//"} runtime_info
                         </span>
                     </div>
                     <h3

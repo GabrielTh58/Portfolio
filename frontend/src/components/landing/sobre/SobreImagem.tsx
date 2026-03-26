@@ -10,7 +10,9 @@ export default function SobreImagem() {
         <div className="absolute -inset-8 rounded-2xl border border-blue-500/10 hidden sm:block" />
 
         <div className="relative h-full w-full rounded-xl overflow-hidden bg-zinc-950 border border-zinc-800 shadow-2xl">
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:32px_32px]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] 
+            bg-[size:32px_32px]" 
+          />
 
           <Image
             src="/perfil.jpeg"
