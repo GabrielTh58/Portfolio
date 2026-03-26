@@ -26,7 +26,7 @@ export default function ProjetosDestaques({ destaques }: ProjetosDestaquesProps)
                                 src={projeto.imagens[0] ?? "/logo.png"}
                                 alt={projeto.nome}
                                 fill
-                                className="object-cover transition-transform duration-700 ease-out group-hover/img:scale-105 z-10"
+                                className="object-cover transition-transform duration-700 ease-out scale-[1.01] group-hover/img:scale-105 z-10"
                             />
 
                             {/* Scan Line Effect */}

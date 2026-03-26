@@ -1,5 +1,5 @@
 import { Projeto } from "@core"
-import { FolderGit2, Github } from "lucide-react"
+import { FolderGit2, Github, Maximize2 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -31,6 +31,13 @@ export default function OutrosProjetos({ outros, setProjetoSelecionado }: Outros
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
+
+                                <div className="absolute top-3 right-3 z-30 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                    <div className="flex items-center gap-2 px-3 py-1.5 bg-black/60 backdrop-blur-md border border-white/10 rounded-full text-white/90">
+                                        <span className="text-xs text-cyan-500/80 font-medium">Ver detalhes</span>
+                                        <Maximize2 size={14}  className="text-cyan-500/80"/>
+                                    </div>
+                                </div>
 
                                 <div className="absolute inset-0 bg-zinc-950/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-5 gap-3">
                                     <div>

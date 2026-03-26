@@ -2,7 +2,7 @@
 import Container from "./Container";
 import Logo from "./Logo";
 import RedesSociais from "./RedesSociais";
-import { IconArrowUp, IconChevronUp, IconCoffee, IconHeartFilled } from "@tabler/icons-react";
+import { IconArrowUp, IconCoffee, IconHeartFilled } from "@tabler/icons-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();

@@ -35,6 +35,9 @@ export default function SecaoProjetos({ projetos }: ProjetosProps) {
 
   return (
     <section id="projetos" className="w-full">
+      <div className="w-full flex justify-center mb-4">
+        <div className="mt-6 h-px w-24 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-60" />
+      </div>
 
       <CabecalhoProjeto />
 
