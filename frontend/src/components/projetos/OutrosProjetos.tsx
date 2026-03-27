@@ -9,6 +9,11 @@ interface OutrosProjetosProps {
 }
 
 export default function OutrosProjetos({ outros, setProjetoSelecionado }: OutrosProjetosProps) {
+    const ordenados = [...outros].sort((a, b) => {
+        const orderA = a.ordem ?? 999;
+        const orderB = b.ordem ?? 999;
+        return orderA - orderB;
+    });
 
 
     return (
@@ -17,7 +22,7 @@ export default function OutrosProjetos({ outros, setProjetoSelecionado }: Outros
                 <Cabecalho />
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {outros.map((projeto) => (
+                    {ordenados.map((projeto) => (
                         <div
                             key={projeto.id}
                             onClick={() => setProjetoSelecionado(projeto)}

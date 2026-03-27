@@ -39,7 +39,7 @@ export default function InspecaoTech({ techAtiva }: InspecaoTechProps) {
                     <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
                         <Terminal size={18} className="text-zinc-600" />
                         <span className="font-mono text-zinc-600 text-xs tracking-widest uppercase">
-                            // system_idle
+                           {"//"} system_idle
                         </span>
                     </div>
                     <h3 className="text-4xl md:text-5xl font-bold text-zinc-200 mb-6 tracking-tight">

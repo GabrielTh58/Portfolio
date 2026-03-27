@@ -7,8 +7,8 @@ import Container from "@/components/shared/Container"
 import Footer from "@/components/shared/Footer"
 import { obterProjetos } from "@/functions/projetos"
 import { obterTecnologias } from "@/functions/tecnologias"
-import RolagemStacks from "@/components/landing/RolagemStacks"
-import BackgroundAnimado from "@/components/landing/BackgroundAnimado"
+import RolagemStacks from "@/components/ui/RolagemStacks"
+import BackgroundAnimado from "@/components/ui/BackgroundAnimado"
 import Cabecalho from "@/components/shared/Cabecalho"
 
 export default async function Home() {

@@ -16,9 +16,4 @@ export class ContatoController {
         await this.emailService.enviarEmail(dto)
         return { message: 'Mensagem enviada com sucesso' }
     }
-
-    @Get('teste')
-    testRoute() {
-      return { message: 'A rota de teste GET funciona!' };
-    }
 }

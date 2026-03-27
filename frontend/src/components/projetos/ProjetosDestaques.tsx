@@ -8,9 +8,15 @@ interface ProjetosDestaquesProps {
 }
 
 export default function ProjetosDestaques({ destaques }: ProjetosDestaquesProps) {
+    const destaquesOrdenados = [...destaques].sort((a, b) => {
+        const orderA = a.ordem ?? 999;
+        const orderB = b.ordem ?? 999;
+        return orderA - orderB;
+    });
+
     return (
         <div className="flex flex-col gap-20 mb-32">
-            {destaques.map((projeto, index) => {
+            {destaquesOrdenados.map((projeto, index) => {
                 const isReversed = index % 2 === 1
 
                 return (
@@ -26,7 +32,7 @@ export default function ProjetosDestaques({ destaques }: ProjetosDestaquesProps)
                                 src={projeto.imagens[0] ?? "/logo.png"}
                                 alt={projeto.nome}
                                 fill
-                                className="object-contain transition-transform duration-700 ease-out group-hover/img:scale-105 z-10"
+                                className="object-cover transition-transform duration-700 ease-out group-hover/img:scale-105 z-10"
                             />
 
                             {/* Scan Line Effect */}

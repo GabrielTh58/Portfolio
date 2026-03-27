@@ -29,9 +29,9 @@ export default function SobreImagem() {
             </div>
             <div className="space-y-1.5 text-slate-400">
               <div><span className="text-blue-400">const</span> developer = {"{"}</div>
-              <div className="pl-4">name: <span className="text-emerald-400">"Gabriel Oliveira"</span>,</div>
-              <div className="pl-4">role: <span className="text-emerald-400">"Full Stack JS"</span>,</div>
-              <div className="pl-4">focus: <span className="text-emerald-400">"growth"</span></div>
+              <div className="pl-4">name: <span className="text-emerald-400">{`"Gabriel Oliveira"`}</span>,</div>
+              <div className="pl-4">role: <span className="text-emerald-400">{`"Full Stack JS"`}</span>,</div>
+              <div className="pl-4">focus: <span className="text-emerald-400">{`"growth"`}</span></div>
               <div>{"}"}</div>
             </div>
           </div>
