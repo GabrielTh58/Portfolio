@@ -21,7 +21,7 @@ export default function Footer() {
             <div className="flex flex-col items-center md:items-start text-center md:text-start">
               <Logo width={110} height={55} />
               <p className="text-zinc-500 font-mono text-[10px] uppercase tracking-[0.2em] mt-2">
-                Full Stack Developer & Software Engineer
+                Full Stack Developer 
               </p>
             </div>
 

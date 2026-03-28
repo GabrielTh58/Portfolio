@@ -5,7 +5,7 @@ Este é o repositório do meu portfólio pessoal, um projeto Full Stack desenvol
 ---
 
 ## 📸 Demonstração (Preview)
-- **Site (deploy):** `<https://seu-portfolio.vercel.app>`  
+- **[Acessar Portfólio](https://seu-portfolio.vercel.app)
 - **Preview / Screenshot:**  
   ![Preview do Portfólio](/frontend/public/preview.png)
 
@@ -22,4 +22,4 @@ Este é o repositório do meu portfólio pessoal, um projeto Full Stack desenvol
 ---
 
 ## 📬 Contato
-- **LinkedIn:** `<https://linkedin.com/in/gcoliveira-dev>`  
+- **LinkedIn:** [Gabriel Oliveira](https://linkedin.com/in/gcoliveira-dev)

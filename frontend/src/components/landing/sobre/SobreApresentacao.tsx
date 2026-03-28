@@ -9,9 +9,9 @@ export default function SobreApresentacao() {
 
             <div className="space-y-5 text-slate-400 text-base md:text-lg leading-relaxed font-fira">
                 <p>
-                    Sou Desenvolvedor Full Stack e graduando em Engenharia de Software. Desenvolvo aplicações web completas, do front-end ao back-end, utilizando 
+                    Sou Desenvolvedor Full Stack, atuando como freelancer, e graduando em Engenharia de Software. Desenvolvo aplicações web completas, do front-end ao back-end, utilizando 
                     tecnologias como React, Next.js, Node.js, TypeScript, TailwindCSS e bancos SQL. Priorizo código limpo, organização e boas decisões técnicas
-                    para entregar soluções performáticas e fáceis de manter.
+                    para entregar soluções performáticas, seguras e fáceis de manter.
                 </p>
             </div>
         </div>

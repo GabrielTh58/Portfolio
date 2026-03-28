@@ -29,8 +29,8 @@ export default function HeroDescription() {
             </h2>
 
             <p className="max-w-2xl text-slate-300/90 text-sm md:text-xl leading-relaxed mb-8 font-fira px-4">
-                Desenvolvedor Full Stack e graduando em Engenharia de Software. Construo aplicações web completas,
-                com código limpo, boas práticas de arquitetura e decisões técnicas bem fundamentadas.
+                Desenvolvedor Full Stack. Desenvolvimento de aplicações web completas, com foco em arquitetura, boas práticas e 
+                organização de código.
             </p>
 
             <div className="flex items-center justify-center w-fit mx-auto gap-2 px-4 py-1.5 rounded-lg bg-zinc-900/50 border border-zinc-800/50 text-slate-400 mb-12 shadow-inner">
