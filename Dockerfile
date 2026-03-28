@@ -1,6 +1,7 @@
 FROM node:20-alpine as builder
 
 ENV NODE_ENV build
+ENV DATABASE_URL="postgresql://postgres:senha@localhost:5432/dummy"
 
 USER node
 WORKDIR /home/node/backend
@@ -12,6 +13,7 @@ WORKDIR /home/node
 COPY --chown=node:node . .
 
 WORKDIR /home/node/backend
+
 RUN npx prisma generate \
     && npm run build \
     && npm prune --omit=dev
