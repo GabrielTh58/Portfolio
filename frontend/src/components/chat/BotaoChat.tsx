@@ -1,3 +1,5 @@
+'use client'
+
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover"
 import JanelaChat from "./JanelaChat"
 import { BotMessageSquare } from "lucide-react"
