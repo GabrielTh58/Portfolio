@@ -8,7 +8,7 @@ interface LogoProps{
 function Logo({width, height}: LogoProps) {
     return (
         <Link href="/" className="">
-            <Image src="/Logo.png" alt="Logo" width={width ?? 'auto'} height={height ?? 'auto'} className="object-cover" />
+            <Image src="/logo-portfolio.png" alt="Logo" width={width ?? 'auto'} height={height ?? 'auto'} className="object-cover" />
         </Link>
     )
 }
