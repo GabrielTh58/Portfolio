@@ -36,7 +36,9 @@ export default function Hero() {
 
 function HeroTitle() {
     return (
-        <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-black/40 backdrop-blur-xl border border-white/10 rounded-full mb-10 shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-transform hover:scale-105">
+        <div className="inline-flex items-center gap-2 px-5 py-2 lg:py-2.5 bg-black/40 backdrop-blur-xl border border-white/10 rounded-full mb-4 lg:mb-10 shadow-[0_0_30px_rgba(0,0,0,0.5)] 
+          transition-transform hover:scale-105"
+        >
             <IconTerminal2 className="w-5 h-5 text-blue-500" stroke={2} />
             <span className="text-sm font-mono text-slate-300">
                 ~/portfolio <span className="text-blue-500 font-bold">$</span> whoami

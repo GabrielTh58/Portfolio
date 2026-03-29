@@ -6,6 +6,7 @@ import { Modal } from "./ModalProjetos"
 import ProjetosDestaques from "./ProjetosDestaques"
 import OutrosProjetos from "./OutrosProjetos"
 import { TerminalSquare } from "lucide-react";
+import Link from "next/link"
 
 
 interface ProjetosProps {
@@ -41,7 +42,10 @@ export default function SecaoProjetos({ projetos }: ProjetosProps) {
 
       <CabecalhoProjeto />
 
-      <ProjetosDestaques destaques={destaques} />
+      <ProjetosDestaques 
+        destaques={destaques} 
+        setProjetoSelecionado={setProjetoSelecionado}    
+      />
     
       <OutrosProjetos 
         outros={outros} 
@@ -52,6 +56,8 @@ export default function SecaoProjetos({ projetos }: ProjetosProps) {
         projetoSelecionado={projetoSelecionado}
         setProjetoSelecionado={setProjetoSelecionado}
       />
+
+      <CTA />
     </section>
   )
 }
@@ -74,3 +80,41 @@ function CabecalhoProjeto() {
     )
 }
 
+function CTA() {
+    return (
+        <div className="mt-16 lg:mt-22 mb-16 flex justify-center w-full relative">
+
+            <div className="absolute -inset-10 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 blur-[80px] opacity-50 group-hover/cta:opacity-100
+                transition-opacity duration-1000 pointer-events-none" 
+            />
+
+            <div className="relative group/cta">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl blur opacity-20 group-hover/cta:opacity-60 
+                    transition duration-700 pointer-events-none"
+                ></div>
+
+                <Link
+                    href="https://github.com/GabrielTh58"
+                    target="_blank"
+                    className="relative flex items-center gap-4 px-5 lg:px-8 py-4 rounded-xl 
+                       bg-zinc-950/40 backdrop-blur-md border border-white/10 
+                       text-zinc-300 transition-all duration-500 
+                       group-hover/cta:bg-zinc-900/50 group-hover/cta:border-cyan-500/40 group-hover/cta:text-white 
+                       shadow-[0_4px_30px_rgba(0,0,0,0.1)] group-hover/cta:shadow-cyan-500/20"
+                >
+                    <span className="font-mono text-cyan-400/80 text-base group-hover/cta:text-cyan-400 transition-colors">
+                        &lt;/&gt;
+                    </span>
+
+                    <span className="font-mono text-sm tracking-widest uppercase font-medium">
+                        Ver repositório no GitHub
+                    </span>
+
+                    <span className="font-mono text-zinc-500 group-hover/cta:text-cyan-400 transition-all duration-300 group-hover/cta:translate-x-1">
+                        -&gt;
+                    </span>
+                </Link>
+            </div>
+        </div>
+    )
+}

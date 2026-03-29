@@ -42,7 +42,7 @@ export default function InspecaoTech({ techAtiva }: InspecaoTechProps) {
                            {"//"} system_idle
                         </span>
                     </div>
-                    <h3 className="text-4xl md:text-5xl font-bold text-zinc-200 mb-6 tracking-tight">
+                    <h3 className="text-3xl md:text-5xl font-bold text-zinc-200 mb-6 tracking-tight">
                         Stack Tecnológica
                     </h3>
                     <div className="pl-5 border-l-2 border-zinc-800">

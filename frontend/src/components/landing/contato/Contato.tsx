@@ -12,12 +12,13 @@ export default function Contato() {
             <div className="relative z-10 w-full flex flex-col lg:flex-row gap-12 lg:gap-20">
 
                 <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 w-fit rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs sm:text-sm font-mono mb-6 md:mb-8 shadow-[0_0_15px_rgba(59,130,246,0.15)]">
-                        <IconCodeCircle2 size={18} className="animate-pulse" />
-                        <span>Status: Open to Work</span>
-                    </div>
-
                     <div>
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 w-fit rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs 
+                            sm:text-sm font-mono mb-6 md:mb-8 shadow-[0_0_15px_rgba(59,130,246,0.15)]"
+                        >
+                            <IconCodeCircle2 size={18} className="animate-pulse" />
+                            <span>Status: Open to Work</span>
+                        </div>
                         <h2 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.1]">
                             Vamos <span className="text-blue-500">Conversar?</span> 
                         </h2>

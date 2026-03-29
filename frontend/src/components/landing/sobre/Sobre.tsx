@@ -6,7 +6,7 @@ import SobreApresentacao from "./SobreApresentacao"
 
 export default function Sobre() {
   return (
-    <section id="sobre" className="relative py-16 w-full max-w-[1250px] mx-auto px-4 sm:px-6 md:px-8">
+    <section id="sobre" className="relative w-full max-w-[1250px] mx-auto px-4 sm:px-6 md:px-8">
       
       <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] -translate-y-1/2 pointer-events-none" />
       

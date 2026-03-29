@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default  function ScrollIndicator() {
     return (
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center">
+        <div className="hidden absolute bottom-8 left-1/2 -translate-x-1/2 md:flex flex-col items-center">
             <span className="text-[10px] font-mono text-slate-500 mb-2 uppercase tracking-widest opacity-70">
                 Scroll
             </span>

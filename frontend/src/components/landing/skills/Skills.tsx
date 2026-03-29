@@ -13,7 +13,7 @@ export default function Skills({ tecnologias }: SkillsProps) {
   const [techAtiva, setTechAtiva] = useState<Tecnologia | null>(null);
 
   return (
-    <section id="skills" className="w-full max-w-[1250px] mx-auto px-4 md:px-8 py-24 relative overflow-hidden">
+    <section id="skills" className="w-full max-w-[1250px] mx-auto px-4 md:px-8 relative overflow-hidden">
       <SkillsTitulo />
       <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-center md:items-start justify-between">
         <InspecaoTech techAtiva={techAtiva} />
@@ -31,7 +31,7 @@ export default function Skills({ tecnologias }: SkillsProps) {
 
 function SkillsTitulo() {
     return (
-        <div className="flex flex-col items-center justify-center text-center mb-24 relative">
+        <div className="flex flex-col items-center justify-center text-center mb-12 lg:mb-24 relative">
             <div className="flex items-center gap-2 mb-4 group justify-center">
                 <div className="p-2 bg-zinc-900 border border-zinc-800 rounded-lg group-hover:border-cyan-500/50 transition-colors">
                     <Cpu className="text-cyan-500 w-4 h-4 animate-pulse" />

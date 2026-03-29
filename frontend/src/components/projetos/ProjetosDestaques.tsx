@@ -1,13 +1,18 @@
 import { Projeto } from "@core"
-import { ExternalLink, Github, Sparkles } from "lucide-react"
+import { ExternalLink, Github, Loader2, Sparkles } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
+import { useState } from "react"
+import Acoes from "./AcoesProjetos"
 
 interface ProjetosDestaquesProps {
     destaques: Projeto[]
+    setProjetoSelecionado: (projeto: Projeto | null) => void
+
 }
 
-export default function ProjetosDestaques({ destaques }: ProjetosDestaquesProps) {
+export default function ProjetosDestaques({ destaques, setProjetoSelecionado }: ProjetosDestaquesProps) {
     const destaquesOrdenados = [...destaques].sort((a, b) => {
         const orderA = a.ordem ?? 999;
         const orderB = b.ordem ?? 999;
@@ -22,17 +27,21 @@ export default function ProjetosDestaques({ destaques }: ProjetosDestaquesProps)
                 return (
                     <div
                         key={projeto.id}
-                        className={`flex flex-col lg:flex-row items-center gap-12 ${isReversed ? "lg:flex-row-reverse" : ""
-                            }`}
+                        className={`flex flex-col lg:flex-row items-center gap-12 ${isReversed ? "lg:flex-row-reverse" : ""}`}
                     >
                         <div className="group/img relative w-full lg:w-[55%] aspect-[16/10] rounded-2xl overflow-hidden bg-zinc-950 shadow-xl 
                             transition-colors border-b-3 border-cyan-500/50 hover:border-cyan-500/80"
+                        
                         >
                             <Image
                                 src={projeto.imagens[0] ?? "/logo.png"}
                                 alt={projeto.nome}
                                 fill
-                                className="object-cover transition-transform duration-700 ease-out group-hover/img:scale-105 z-10"
+                                className="object-cover transition-transform duration-700 ease-out group-hover/img:scale-105 z-10 cursor-pointer lg:cursor-default"
+                                      onClick={() => {
+                            if (window.innerWidth < 1024) { 
+                                setProjetoSelecionado(projeto)
+                            }}}
                             />
 
                             {/* Scan Line Effect */}
@@ -83,38 +92,11 @@ export default function ProjetosDestaques({ destaques }: ProjetosDestaquesProps)
                                 </div>
                             )}
 
-                            <Actions projeto={projeto} />
+                            <Acoes projeto={projeto} />
                         </div>
                     </div>
                 )
             })}
-        </div>
-    )
-}
-
-function Actions({projeto}: {projeto: Projeto}) {
-    return (
-        <div className="flex flex-col sm:flex-row items-center gap-3 mt-2 w-full">
-            {projeto.link && (
-                <>
-                    <Link
-                        href={projeto.link}
-                        target="_blank"
-                        className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg w-full sm:w-auto bg-blue-600 hover:bg-blue-500/80
-                            text-white text-sm font-semibold transition-all duration-300 shadow-md hover:shadow-cyan-500/30"
-                    >
-                        <ExternalLink size={18} />
-                        Preview
-                    </Link>
-
-                    <Link
-                        href={`/projeto/${projeto.id}`}
-                        className="flex items-center justify-center px-6 py-3 rounded-lg w-full sm:w-auto border border-zinc-700 bg-zinc-900/50 text-zinc-300 text-sm font-medium hover:border-zinc-500 hover:bg-zinc-800 hover:text-white transition-all duration-300"
-                    >
-                        Ver detalhes
-                    </Link>
-                </>
-            )}
         </div>
     )
 }
