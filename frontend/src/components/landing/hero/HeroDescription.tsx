@@ -9,7 +9,7 @@ export default function HeroDescription() {
             "Full Stack Dev",
             "React & Next.js Dev",
             "Software Engineering",
-            "Design System"
+            "Clean Code & Architecture"
         ], 80, 50, 2000);
 
     return (

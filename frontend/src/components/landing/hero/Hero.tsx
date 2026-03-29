@@ -16,7 +16,7 @@ export default function Hero() {
       <HeroBackground />
 
       <div className="relative z-10 flex flex-col w-full h-full">
-        <div className="flex-1 w-full max-w-[1000px] mx-auto px-4 md:px-8 flex flex-col justify-center items-center pt-16 pb-32">
+        <div className="flex-1 w-full max-w-[1000px] mx-auto px-4 md:px-8 flex flex-col justify-center items-center">
 
           <HeroTitle />
 
