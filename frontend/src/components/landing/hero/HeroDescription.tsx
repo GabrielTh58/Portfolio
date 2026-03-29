@@ -7,9 +7,9 @@ export default function HeroDescription() {
 
         const role = useAnimacaoDigitacaoCircular([
             "Full Stack Dev",
-            "React & Next.js Dev",
+            "Next.js & Nest.js",
             "Software Engineering",
-            "Clean Code & Architecture"
+            "Building Web Application"
         ], 80, 50, 2000);
 
     return (
@@ -28,14 +28,14 @@ export default function HeroDescription() {
                 <span className="text-slate-600">{"/>"}</span>
             </h2>
 
-            <p className="max-w-2xl text-slate-300/90 text-sm md:text-xl leading-relaxed mb-8 font-fira px-4">
+            <p className="max-w-2xl text-slate-300/90 text-xs sm:text-sm md:text-xl leading-relaxed mb-8 font-fira px-4">
                 Desenvolvedor Full Stack. Desenvolvimento de aplicações web completas, com foco em arquitetura, boas práticas e 
                 organização de código.
             </p>
 
             <div className="flex items-center justify-center w-fit mx-auto gap-2 px-4 py-1.5 rounded-lg bg-zinc-900/50 border border-zinc-800/50 text-slate-400 mb-12 shadow-inner">
               <IconCoffee size={16} className="text-amber-600/80" />
-              <span className="font-mono text-xs uppercase tracking-widest">Powered by caffeine & discipline</span>
+              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest">Powered by caffeine & discipline</span>
             </div>
             
         </div>
