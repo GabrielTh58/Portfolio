@@ -21,7 +21,9 @@ export default function JanelaChat() {
     }, [mensagens])
 
     return (
-        <div className="flex flex-col bg-zinc-950/90 backdrop-blur-xl border border-zinc-800/80 rounded-2xl text-zinc-300 overflow-hidden shadow-[0_10px_50px_rgba(0,0,0,0.8)] shadow-cyan-500/10">
+        <div className="flex flex-col bg-zinc-950/90 backdrop-blur-xl border border-zinc-800/80 rounded-2xl text-zinc-300 overflow-hidden 
+            shadow-[0_10px_50px_rgba(0,0,0,0.8)] shadow-cyan-500/10"
+        >
             
             {/* Header do Chat */}
             <div className="flex justify-between items-center bg-zinc-900/50 border-b border-zinc-800 p-4">
@@ -40,7 +42,7 @@ export default function JanelaChat() {
 
             {/* Corpo do Chat */}
             {mensagens.length === 0 ? (
-                <div className="flex flex-col justify-center items-center h-[400px]">
+                <div className="flex flex-col justify-center items-center h-[300px] md:h-[400px]">
                     <div className="p-4 rounded-full bg-zinc-900/50 mb-4 border border-zinc-800/50">
                         <IconMessages size={40} stroke={1.5} className="text-cyan-500/50" />
                     </div>

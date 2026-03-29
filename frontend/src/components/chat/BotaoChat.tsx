@@ -9,8 +9,8 @@ export default function BotaoChat() {
         <Popover>
             <PopoverTrigger asChild>
                 <button 
-                    className="group fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-zinc-950/80 backdrop-blur-md border cursor-pointer
-                        border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.2)] 
+                    className="group fixed bottom-4 right-4 sm:bottom-6 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 z-50 flex items-center justify-center rounded-full
+                        bg-zinc-950/80 backdrop-blur-md border cursor-pointer border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.2)] 
                         hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:scale-110 hover:border-cyan-400 hover:bg-zinc-900/90
                         transition-all duration-300 focus:outline-none"
                     aria-label="Abrir chat"
@@ -26,7 +26,7 @@ export default function BotaoChat() {
                 side="top"
                 align="end"
                 sideOffset={16}
-                className="w-[350px] sm:w-[450px] p-0 bg-transparent border-none shadow-none z-[100]"
+                className="w-[calc(100vw-1rem)] max-w-[310px] sm:max-w-[450px] p-0 bg-transparent border-none shadow-none z-[100]"
             >
                 <JanelaChat />
             </PopoverContent>
