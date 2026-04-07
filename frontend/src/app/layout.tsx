@@ -5,7 +5,7 @@ import "./globals.css"
 import { Toaster } from "sonner"
 
 export const metadata: Metadata = {
-	title: "GabCode",
+	title: "Gabriel Dev",
 	description: "Portfólio de projetos de desenvolvimento",
 }
 
