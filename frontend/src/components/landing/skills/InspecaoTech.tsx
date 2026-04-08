@@ -1,4 +1,4 @@
-import { Tecnologia } from "@core";
+import { Tecnologia } from "@swc/core";
 import { Code2, Terminal } from "lucide-react";
 
 interface InspecaoTechProps {

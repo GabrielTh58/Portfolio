@@ -1,4 +1,4 @@
-import { Projeto } from "@core"
+import { Projeto } from "@swc/core"
 import { IconX } from "@tabler/icons-react"
 import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"

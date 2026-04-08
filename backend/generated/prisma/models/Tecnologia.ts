@@ -199,7 +199,7 @@ export type TecnologiaGroupByOutputType = {
   _max: TecnologiaMaxAggregateOutputType | null
 }
 
-type GetTecnologiaGroupByPayload<T extends TecnologiaGroupByArgs> = Prisma.PrismaPromise<
+export type GetTecnologiaGroupByPayload<T extends TecnologiaGroupByArgs> = Prisma.PrismaPromise<
   Array<
     Prisma.PickEnumerable<TecnologiaGroupByOutputType, T['by']> &
       {

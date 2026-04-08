@@ -1,4 +1,4 @@
-import { Projeto } from "@core"
+import { Projeto } from "@swc/core"
 import { ExternalLink, Loader2 } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { useState } from "react"

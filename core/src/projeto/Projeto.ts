@@ -1,7 +1,7 @@
 import { Tecnologia } from "../tecnologia"
 import { Nivel } from "./Nivel"
 
-export default interface Proejeto{
+export default interface Projeto{
     id: number
     nome: string
     descricao: string

@@ -1,4 +1,4 @@
-import { Id } from "@core"
+import { Id } from "@swc/core"
 import useLocalStorage from "./useLocalStorage"
 import Mensagem from "@/model/Mensagem"
 import conversar from "@/functions/chat"

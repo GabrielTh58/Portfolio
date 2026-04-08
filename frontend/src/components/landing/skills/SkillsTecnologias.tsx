@@ -1,4 +1,4 @@
-import { Tecnologia } from "@core";
+import { Tecnologia } from "@swc/core";
 import Image from "next/image";
 
 interface SkillsTecnologiasProps {

@@ -1,4 +1,4 @@
-import { Projeto } from "@core"
+import { Projeto } from "@swc/core"
 import { httpGet } from "./api"
 
 export async function obterProjetos() {

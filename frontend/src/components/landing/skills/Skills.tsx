@@ -1,5 +1,5 @@
 'use client'
-import { Tecnologia } from "@core";
+import { Tecnologia } from "@swc/core";
 import { Cpu } from "lucide-react";
 import { useState } from "react";
 import InspecaoTech from "./InspecaoTech";

@@ -1,7 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { TecnologiaProvider } from './tecnologia.provider';
-import { Tecnologia } from '@core';
-
+import { Tecnologia } from '@portfolio/core';
 @Controller('tecnologias')
 export class TecnologiaController {
     constructor(private readonly repo: TecnologiaProvider){}

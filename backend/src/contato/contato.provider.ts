@@ -1,7 +1,7 @@
 import { MailerService } from "@nestjs-modules/mailer";
 import { Injectable, InternalServerErrorException } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { ContatoDTO } from "src/dto/contato.dto";
+import { ContatoDTO } from "../dto/contato.dto";
 
 @Injectable()
 export class ContatoProvider {

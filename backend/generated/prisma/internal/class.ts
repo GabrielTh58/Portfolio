@@ -17,8 +17,8 @@ import type * as Prisma from "./prismaNamespace"
 
 const config: runtime.GetPrismaClientConfig = {
   "previewFeatures": [],
-  "clientVersion": "7.5.0",
-  "engineVersion": "280c870be64f457428992c43c1f6d557fab6e29e",
+  "clientVersion": "7.7.0",
+  "engineVersion": "75cbdc1eb7150937890ad5465d861175c6624711",
   "activeProvider": "postgresql",
   "inlineSchema": "generator client {\n  provider = \"prisma-client\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n}\n\nmodel Tecnologia {\n  id        Int       @id @default(autoincrement())\n  nome      String\n  descricao String\n  imagem    String\n  destaque  Boolean   @default(false)\n  cor       String    @default(\"#2b7fff\")\n  projetos  Projeto[] @relation(\"ProjetoToTecnologia\")\n\n  @@map(\"tecnologias\")\n}\n\nmodel Projeto {\n  id          Int          @id @default(autoincrement())\n  nome        String\n  descricao   String\n  imagens     String[]\n  nivel       Int\n  link        String\n  destaque    Boolean      @default(false)\n  repositorio String\n  tags        String[]\n  ordem       Decimal?     @db.Decimal\n  tecnologias Tecnologia[] @relation(\"ProjetoToTecnologia\")\n\n  @@map(\"projetos\")\n}\n",
   "runtimeDataModel": {

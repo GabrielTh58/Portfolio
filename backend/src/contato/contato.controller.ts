@@ -1,6 +1,6 @@
-import { Body, Controller, Get, HttpCode, Post } from '@nestjs/common';
+import { Body, Controller, HttpCode, Post } from '@nestjs/common';
 import { ContatoProvider } from './contato.provider';
-import { ContatoDTO } from 'src/dto/contato.dto';
+import { ContatoDTO } from '../dto/contato.dto';
 
 @Controller('contato')
 export class ContatoController {

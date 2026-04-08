@@ -1,6 +1,6 @@
 'use client'
 
-import { Projeto } from "@core"
+import { Projeto } from "@swc/core"
 import { useEffect, useState } from "react"
 import { Modal } from "./ModalProjetos"
 import ProjetosDestaques from "./ProjetosDestaques"

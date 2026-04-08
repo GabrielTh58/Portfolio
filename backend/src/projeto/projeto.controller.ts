@@ -1,4 +1,4 @@
-import { Projeto } from '@core';
+import { Projeto } from '@portfolio/core';
 import { Controller, Get, Param } from '@nestjs/common';
 import { ProjetoPrisma } from './projeto.provider';
 
