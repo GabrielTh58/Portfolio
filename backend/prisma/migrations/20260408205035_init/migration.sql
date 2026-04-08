@@ -5,6 +5,7 @@ CREATE TABLE "tecnologias" (
     "descricao" TEXT NOT NULL,
     "imagem" TEXT NOT NULL,
     "destaque" BOOLEAN NOT NULL DEFAULT false,
+    "cor" TEXT NOT NULL DEFAULT '#2b7fff',
 
     CONSTRAINT "tecnologias_pkey" PRIMARY KEY ("id")
 );
@@ -16,9 +17,11 @@ CREATE TABLE "projetos" (
     "descricao" TEXT NOT NULL,
     "imagens" TEXT[],
     "nivel" INTEGER NOT NULL,
-    "tipo" TEXT NOT NULL,
+    "link" TEXT NOT NULL,
     "destaque" BOOLEAN NOT NULL DEFAULT false,
     "repositorio" TEXT NOT NULL,
+    "tags" TEXT[],
+    "ordem" DECIMAL,
 
     CONSTRAINT "projetos_pkey" PRIMARY KEY ("id")
 );
